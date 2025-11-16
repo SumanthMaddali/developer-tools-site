@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Tools</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Developer Tools</h1>
+        <p>A collection of simple tools for developers</p>
+    </header>
+
+    <main>
+        <section class="tool">
+            <h2>JSON Formatter / Minifier</h2>
+            <textarea id="jsonInput" placeholder="Paste JSON here..."></textarea>
+            <div class="buttons">
+                <button onclick="formatJSON()">Format</button>
+                <button onclick="minifyJSON()">Minify</button>
+            </div>
+            <textarea id="jsonOutput" placeholder="Formatted JSON output..."></textarea>
+        </section>
+
+        <section class="tool">
+            <h2>Base64 Encode / Decode</h2>
+            <textarea id="base64Input" placeholder="Paste text..."></textarea>
+            <div class="buttons">
+                <button onclick="encodeBase64()">Encode</button>
+                <button onclick="decodeBase64()">Decode</button>
+            </div>
+            <textarea id="base64Output" placeholder="Output..."></textarea>
+        </section>
+
+        <section class="tool">
+            <h2>URL Encode / Decode</h2>
+            <textarea id="urlInput" placeholder="Paste text..."></textarea>
+            <div class="buttons">
+                <button onclick="encodeURL()">Encode</button>
+                <button onclick="decodeURL()">Decode</button>
+            </div>
+            <textarea id="urlOutput" placeholder="Output..."></textarea>
+        </section>
+    </main>
+
+    <footer>
+        <p>Developer Tools © 2025</p>
+    </footer>
+
+    <script src="js/json-formatter.js"></script>
+    <script src="js/base64-tool.js"></script>
+    <script src="js/url-encoder.js"></script>
+</body>
+</html>
