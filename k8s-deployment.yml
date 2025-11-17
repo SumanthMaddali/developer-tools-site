@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: developer-tools-site
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: developer-tools-site
+  template:
+    metadata:
+      labels:
+        app: developer-tools-site
+    spec:
+      containers:
+      - name: web
+        image: sumanthmaddali/developertools:latest
+        ports:
+        - containerPort: 80
