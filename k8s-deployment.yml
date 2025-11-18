@@ -15,5 +15,6 @@ spec:
       containers:
       - name: web
         image: sumanthmaddali/developertools:latest
+        imagePullPolicy: Alwaysk
         ports:
         - containerPort: 80
